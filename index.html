@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSIT CLASS C CYBER TECH</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      height: 100vh;
+      background-color: #121212;
+      color: #e4e4e4;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: #e4e4e4;
+      padding: 15px 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .menu {
+      margin-right: 15px;
+      background-color: #2d2d2d;
+      border-radius: 4px;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: #00aaff;
+      font-weight: bold;
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+
+    .menu:hover {
+      background-color: #3a3a3a;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #00aaff;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+
+    nav {
+      background-color: #1c1c1c;
+      border-right: 1px solid #333;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    nav div {
+      background-color: #2d2d2d;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #e4e4e4;
+      transition: all 0.3s ease;
+    }
+
+    nav div:hover {
+      background-color: #3a3a3a;
+      transform: scale(1.03);
+      box-shadow: 0 0 8px #00aaff;
+    }
+
+    .content {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .top-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .top-row div {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .top-row div:hover {
+      background-color: #2a2a2a;
+      transform: translateY(-3px);
+      box-shadow: 0 0 10px #00aaff;
+    }
+
+    .feed {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+      transition: background 0.3s;
+    }
+
+    .feed:hover {
+      background-color: #252525;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 200px;
+        height: calc(100% - 60px);
+        background-color: #1c1c1c;
+        border-right: 1px solid #333;
+        transform: translateX(-220px);
+        box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+      }
+
+      nav.show {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="menu" id="menuBtn">☰</div>
+    BSIT CLASS C CYBER TECH SUPPORT SYSTEM
+  </header>
+
+  <main>
+    <nav id="sidebar">
+      <div>COMPUTER PROGRAMMING1</div>
+      <div>COMPUTER REPAIR AND MAINTENANCE</div>
+      <div>INTRODUCTION TO COMPUTING</div>
+      <div>PURPPOSIVE COMMUNICATION</div>
+      <div>UNDERSTANDING THE SELF</div>
+      <div>MOVEMENT COMPETENCY</div>
+      <div>CWTS/ROTC</div>
+      <div>MATHEMATICS IN THE MODERN WORLD</div>
+    </nav>
+
+    <div class="content">
+      <div class="top-row">
+        <div>ANNOUNCEMENTS</div>
+        <div>SUSPENSION OF CLASSES</div>
+        <div>CONCERNS</div>
+        <div>SCHEDULES</div>
+        <div>QUIZES</div>
+      </div>
+
+      <div class="feed">
+        <h2>ANNOUNCEMENT:</h2>
+        <p>
+			<br>
+			<why>Cancellation of Classes</why>
+			<br></br>
+			Reason: Due to unforeseen circumstances, all classes are cancelled today. Please stay tuned for further updates.
+			<br></br>
+			<p>Source: Pangasinan PDRRMO</p><a href="https://www.facebook.com/groups/223153257043828">https://www.facebook.com/groups/223153257043828</a>
+			<style>
+				a:hover {
+					color: #00aaff;
+					background-color: #00e1ff37;
+				}
+				why {
+					font-size: 16px;
+					font-weight: bold;
+					color: #ff4c4c;
+				}
+			</style>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p></p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p></p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+	  <div class="feed">
+        <h2>ANNOUNCEMENTS:</h2>
+        <p>Welcome to the module system! This is the main announcement area. Only developers can edit this section.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const sidebar = document.getElementById('sidebar');
+
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
+    });
+  </script>
+	<style>
+		  weblay {
+	bottom: 40px;
+	left: 20px;
+	font-size: 12px;
+	color: #888;
+	text-align: center;
+  }
+  founder {
+	bottom: 25px;
+	left: 20px;
+	font-size: 12px;
+	color: #888;
+	text-align: center;
+  }
+  system {
+	bottom: 10px;
+	left: 20px;
+	font-size: 12px;
+	color: #888;
+	text-align: center;
+  }
+	</style>
+  <weblay>BSIT CLASS CYBER TECH SUPPORT SYSTEM</weblay>
+	<founder>SYSTEM CREATED BY: EMMAN SORIANO DECENA</founder>
+  	<system>VERSION 1.0.0</system>
+
+</body>
+</html>
